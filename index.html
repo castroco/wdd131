@@ -4,11 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Carlos Castro</title>
+    <meta name="description"
+        content="This is a web page for the course WDD 131 – Dynamic Web Fundamentals, contain information about the student Carlos Castro and and some web tools tha helps to build web pages">
+    <meta name="author" content="Carlos Castro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
-<body>
-    <header>WDD 131</header>
+<body onload="get_data()">
+    <header>
+        <span id=" course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/carlosocastro/?locale=en_US">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://byupw.instructure.com/">Canvas</a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=spa&id=p34-p38#p34">Scripture</a>
+                </li>
+                <li>
+                    <a href="#">Final Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Carlos Castro</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p class="person">My name is Carlos Castro, I was born in Chile, I am married and I have three children. I
+                have worked
+                developing software and providing computer support for several years in the past. I like football,
+                movies, history, and everything related to science, especially physics.</p>
+            <img class="personpic" src="images/carlos_castro.jpg" alt="picture of Carlos Castro">
+            <img class="citypic" src="images/vera_rubin.jpg" alt="">
+            <p class="city">
+                Chile is the one of the souther countries in the world. It is also very close to Antarctica. It has one
+                of the driest deserts and some of the largest and most modern telescopes like Extremely Large Telescope
+                (ELT), Very Large Telescope (VLT), Atacama Large Millimeter/submillimeter Array (ALMA) and the Vera C.
+                Rubin Observatory.
+            </p>
+        </section>
+        <section class="card card2">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://academia.holamundo.io/">Hola Mundo</a></li>
+                <li><a href="https://www.w3school.com">W3 School</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://www.platzi.com">Platzi</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; <span id="currentyear"></span> - Carlos Castro - Chile</p>
+        <p id="lastModified">test1</p>
+    </footer>
+
 </body>
 
 </html>
