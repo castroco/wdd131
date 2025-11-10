@@ -1,6 +1,8 @@
 :root {
     --color-fondo1: #8ECAE6;
     --color-fondo2: #FFB703;
+    --color-fondo3: #97DCED;
+    --color-fondo4: #FFA033;
     --color-fuente1: #023047;
     --color-fuente2: #522C00;
 }
@@ -9,6 +11,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header span {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-fondo3);
 }
 
 body {
@@ -62,7 +73,6 @@ header span {
 
 main {
     max-width: 95vw;
-    background-color: #8ECAE6;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -77,17 +87,21 @@ main h1 {
 }
 
 main section {
-    background-color: #FFB703;
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
-    align-items: center;
+    align-items: start;
     justify-items: center;
-    padding: 1rem;
+    border: 1px solid var(--color-fuente1);
+    border-radius: 15px;
+    margin: 0 0 1rem 0;
 }
 
 main section h2 {
     grid-column: 1/4;
     text-align: center;
+    background-color: var(--color-fondo3);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
 }
 
 
@@ -95,32 +109,39 @@ main section .personpic {
     grid-column: 3/4;
     width: 160px;
     height: 149px;
+    margin: 15px;
 }
 
 main section .person {
     grid-column: 1/3;
+    margin: 0 0 0 15px;
+    align-items: center;
 }
 
 main section .city {
     grid-column: 2/4;
+    margin: 0 15px 0 0;
 }
 
 main section .citypic {
     grid-column: 1/2;
     width: 160px;
     height: 149px;
+    margin: 15px;
 }
 
 main .card2 {
-    background-color: #FFB703;
     display: grid;
     grid-template-columns: 1fr;
     align-items: start;
     justify-items: center;
-    padding: 1rem;
 
 }
 
+footer {
+    background-color: var(--color-fondo3);
+    padding: 1rem;
+}
 
 
 @media (min-width: 640px) {
