@@ -156,6 +156,7 @@ footer p {
 
     nav ul li {
         flex: 1 0 auto;
+        
         /* flex: [flex-grow] [flex-shrink] [flex-basis];*/
     }
 

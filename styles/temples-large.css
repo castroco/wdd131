@@ -1,0 +1,29 @@
+@media (min-width: 37.5em) {
+    .menucontainer {
+        display: inline;
+        padding: 0.8rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    header span {
+        font-size: 1.5em;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+}
