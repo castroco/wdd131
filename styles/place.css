@@ -2,6 +2,7 @@
     --color-fondo2: #FFB703;
     --color-fondo3: #97DCED;
     --color-fuente1: #ffffff;
+    --color-fuente2: #000000;
     --color-img-backg1: #f0d7ec;
     --color-img-backg2: #36367c;
 }
@@ -39,7 +40,7 @@ img {
 }
 
 .description {
-    color: red;
+    color: var(--color-fuente2);
     text-align: right;
     padding: 10px;
 }
