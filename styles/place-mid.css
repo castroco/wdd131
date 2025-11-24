@@ -75,7 +75,14 @@
         color: var(--color-fuente1);
     }
 
+    #weather img {
+        display: none;
+    }
+
     #weather h2::after {
+        content: "⛈";
+        display: block;
+        text-align: center;
         color: var(--color-fuente1);
         padding: 10px;
         font-size: 2em;
