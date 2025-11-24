@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chile</title>
+    <meta name="description" content="Web page about Chile, places, temperature and other details">
+    <meta name="author" content="Carlos Castro">
+    <link rel="shortcut icon" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-mid.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body onload="get_data()">
+    <header>
+        <h1>Chile</h1>
+    </header>
+    <main>
+        <section id="hero-image">
+            <picture id="heroContainer">
+                <source media="(max-width: 500px)" srcset="images/tpaine-small.webp">
+                <source media="(min-width: 500px) and (max-width: 1080px)" srcset="images/tpaine-large.webp">
+                <source media="(min-width: 1080px)" srcset="images/tpaine-large.webp">
+                <img id="hero-img" src="images/tpaine.jpg"
+                    alt="image of torres del Paine Chile from https://patagonia-chile.com/">
+            </picture>
+        </section>
+        <section id="data">
+            <h2>Data</h2>
+            <p class="description">Area: </p>
+            <p class="information">756,626 sq km</p>
+            <p class="description">Population: </p>
+            <p class="information">20.000.000</p>
+            <p class="description">Capital: </p>
+            <p class="information">Santiago</p>
+            <p class="description">Languages: </p>
+            <p class="information">Spanish, rapa nui</p>
+            <p class="description">Currency: </p>
+            <p class="information">Chilean Peso</p>
+            <p class="description">Time Zone: </p>
+            <p class="information">UTC -4</p>
+            <p class="description">Calling Code: </p>
+            <p class="information">+56</p>
+            <p class="description">Internet TLD: </p>
+            <p class="information">.cl</p>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="images/cloudy.svg" id="weather-icon" alt="Icon of weather condition">
+            <p class="description">Temperature</p>
+            <p class="information"><span id="temperature">48</span> &deg;F</p>
+            <p class="description">Conditions</p>
+            <p class="information">Partly Cloudy</p>
+            <p class="description">Wind</p>
+            <p class="information"><span id="wind">5</span> mph</p>
+            <p class="description">Wind Chill</p>
+            <p class="information" id="windchill"><span>N/A</span> &deg;C</p>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; <span id="currentyear"></span> - Carlos Castro - Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
