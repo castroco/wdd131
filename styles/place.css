@@ -1,7 +1,7 @@
 :root {
     --color-fondo2: #FFB703;
     --color-fondo3: #97DCED;
-    --color-fuente1: white;
+    --color-fuente1: #ffffff;
     --color-img-backg1: #f0d7ec;
     --color-img-backg2: #36367c;
 }
@@ -76,7 +76,7 @@ footer {
     display: block;
     margin: 0 auto;
     text-align: center;
-    background-color: var(--color-fondo3);
+    background-color: var(--color-img-backg2);
     color: var(--color-fuente1);
     padding: 1rem;
     width: 100%;
