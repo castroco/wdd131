@@ -1,0 +1,96 @@
+.menucontainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+    padding: 1rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: black;
+}
+
+header span {
+    font-size: 2.2em;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: lightblue;
+    margin-top: 0px;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    background-color: lightpink;
+    color: black;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.wf::before {
+    content: "> ";
+}
+
+.wf::after {
+    content: " <";
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+figure {
+    margin: 0px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+figure figcaption {
+    margin: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+    margin: 20px 0px;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightpink;
+    color: var(--color-fuente1);
+    padding: 1rem;
+}
