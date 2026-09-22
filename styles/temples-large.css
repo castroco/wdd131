@@ -1,8 +1,22 @@
 @media (min-width: 37.5em) {
 
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .menucontainer {
+        display: inline;
+        padding: 0.7rem;
+    }
+
+    header span {
+        font-size: 1.5em;
+    }
+
     #menu {
-            display: none;
-        }
+        display: none;
+    }
 
     .navigation {
         flex-direction: row;
